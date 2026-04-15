@@ -3,110 +3,28 @@
 
 // Configuration for conditional categories
 var conditionalCategories = {
-    // Anal/Ass content
-    'Ass play': {
-        triggers: [
-            { trigger: 'Hotdogging', triggerCategory: 'General' },
-            { trigger: 'Ass', triggerCategory: 'Bodies' }
-        ]
-    },
-    // Genital-specific categories
-    'Oral Sex': {
-        triggers: [
-            { trigger: 'Cocks', triggerCategory: 'Bodies' },
-            { trigger: 'Pussy', triggerCategory: 'Bodies' }
-        ]
-    },
-    'Vaginal': { trigger: 'Pussy', triggerCategory: 'Bodies' },
-    // Body-part specific
-    'Breast Play': { trigger: 'Breasts', triggerCategory: 'Bodies' },
-    'Foreskin Play': { trigger: 'Uncut Cocks', triggerCategory: 'Bodies' },
-    'Foot Worship': { trigger: 'Feet', triggerCategory: 'Bodies' },
-    // BDSM/Bondage
-    'Restrictive': { trigger: 'Dominant / Submissive', triggerCategory: 'Domination' },
-    'BDSM & Related': {
-        triggers: [
-            { trigger: 'Dominant / Submissive', triggerCategory: 'Domination' },
-            { trigger: 'Bondage (Light)', triggerCategory: 'Restrictive' },
-            { trigger: 'Bondage (Heavy)', triggerCategory: 'Restrictive' }
-        ]
-    },
-    'Temperature Play': { trigger: 'Ice', triggerCategory: 'General' },
-    // Non-consent
-    'No consent': { trigger: 'Dubious consent', triggerCategory: 'General' },
-    // Taboo content
-    'Taboo': { trigger: 'Incest', triggerCategory: 'Roleplay Dynamics' },
-    // Fantasy/Surrealism
-    'Fantasy Creatures': { trigger: 'Monster or Alien', triggerCategory: 'General' },
-    'General Surrealism': {
-        triggers: [
-            { trigger: 'Gender Transformation', triggerCategory: 'General' },
-            { trigger: 'Furry', triggerCategory: 'Fantasy Creatures' },
-            { trigger: 'Futanari/Futa', triggerCategory: 'Fantasy Creatures' },
-            { trigger: 'Monster or Alien', triggerCategory: 'Fantasy Creatures' },
-            { trigger: 'Tentacles', triggerCategory: 'Fantasy Creatures' }
-        ]
-    },
-    'Vore / Unbirth': { trigger: 'Vore', triggerCategory: 'General Surrealism' },
-    // Fluids
-    'Fluids': {
-        triggers: [
-            { trigger: 'Swallowing', triggerCategory: 'Oral Sex' },
-            { trigger: 'Facials', triggerCategory: 'Oral Sex' }
-        ]
-    },
-    'Cum-related': { trigger: 'Cum', triggerCategory: 'Fluids' },
-    'Watersports / Scat': { trigger: 'Pee/Urine', triggerCategory: 'Fluids' },
-    // Degradation
-    'Degradation': {
-        triggers: [
-            { trigger: 'Dominant / Submissive', triggerCategory: 'Domination' },
-            { trigger: 'Dirty Talking', triggerCategory: 'General' }
-        ]
-    },
-    // Scents
-    'Scents & Smells': { trigger: 'Musk', triggerCategory: 'Misc. Fetish' },
-    // Pain/Torture
-    'Pain': {
-        triggers: [
-            { trigger: 'Dominant / Submissive', triggerCategory: 'Domination' },
-            { trigger: 'Biting', triggerCategory: 'General' },
-            { trigger: 'Scratching', triggerCategory: 'General' }
-        ]
-    },
-    'Blood & Gore / Torture / Death': { 
-        triggers: [
-            { trigger: 'Light pain', triggerCategory: 'Pain' },
-            { trigger: 'Heavy pain', triggerCategory: 'Pain' },
-            { trigger: 'Blood', triggerCategory: 'Fluids' }
-        ]
-    },
-    // Group activities
-    'Group Sex': { trigger: 'Gangbang', triggerCategory: 'Group Sex' },
-    // Breeding/Pregnancy
-    'Breeding & Pregnancy': {
-        triggers: [
-            { trigger: 'Impregnation', triggerCategory: 'Breeding & Pregnancy' },
-            { trigger: 'Breeding', triggerCategory: 'Breeding & Pregnancy' },
-            { trigger: 'Pregnancy', triggerCategory: 'Breeding & Pregnancy' }
-        ]
-    },
-    // Body modification
-    'Body Modification': {
-        triggers: [
-            { trigger: 'Feminization', triggerCategory: 'Body Modification' },
-            { trigger: 'Masculinization', triggerCategory: 'Body Modification' }
-        ]
-    },
-    // Breath play
-    'Breath & Smothering': {
-        triggers: [
-            { trigger: 'Breath play', triggerCategory: 'Breath & Smothering' },
-            { trigger: 'Dominant / Submissive', triggerCategory: 'Domination' }
-        ]
-    },
-    // Other fetishes
-    'Other Fetishes': { trigger: 'Food Play', triggerCategory: 'Other Fetishes' }
+    "Feet": {trigger: 'Feet', triggerCategory: 'Category Unlocks'},
+    "Breeding & Pregnancy": {trigger: 'Breeding & Pregnancy', triggerCategory: 'Category Unlocks'},
+    "Body Modification": {trigger: 'Body Modification', triggerCategory: 'Category Unlocks'},
+    "Scents & Smells": {trigger: 'Scents & Smells', triggerCategory: 'Category Unlocks'},
+    "Temperature Play": {trigger: 'Temperature Play', triggerCategory: 'Category Unlocks'},
+    "Other Fetishes": {trigger: 'Other Fetishes', triggerCategory: 'Category Unlocks'},
+    "Technology & Digital Play": {trigger: 'Technology & Digital Play', triggerCategory: 'Category Unlocks'},
+    "Monsterfucking": {trigger: 'Monsterfucking', triggerCategory: 'Category Unlocks'},
+    "General Surrealism": {trigger: 'General Surrealism', triggerCategory: 'Category Unlocks'},
+    "Vore / Unbirth": {trigger: 'Vore / Unbirth', triggerCategory: 'Category Unlocks'},
+    "Taboo": {trigger: 'Taboo', triggerCategory: 'Category Unlocks'},
+    "CNC/Consent Play": {trigger: 'CNC/Consent Play', triggerCategory: 'Category Unlocks'},
+    "BDSM Dynamics": {trigger: 'BDSM Dynamics', triggerCategory: 'Category Unlocks'},
+    "Honorifics": {trigger: 'Honorifics', triggerCategory: 'Category Unlocks'},
+    "Degradation": {trigger: 'Degredation', triggerCategory: 'Category Unlocks'},
+    "BDSM Implements": {trigger: 'BDSM Implements', triggerCategory: 'Category Unlocks'},
+    "Pain": {trigger: 'Pain', triggerCategory: 'Category Unlocks'},
+    "Breath Play & Smothering": {trigger: 'Breath Play & Smothering', triggerCategory: 'Category Unlocks'},
+    "Piss": {trigger: 'Piss', triggerCategory: 'Category Unlocks'},
+    "Scat": {trigger: 'Scat', triggerCategory: 'Category Unlocks'},
+    "Vomit": {trigger: 'Vomit', triggerCategory: 'Category Unlocks'},
+    "Gore/Torture/Death": {trigger: 'Gore/Torture/Death', triggerCategory: 'Category Unlocks'}
 };
 
 var log = function(val, base) {
@@ -170,7 +88,7 @@ $(function(){
             return $category;
         },
         createChoice: function(){
-            var $container = $('<div>').addClass('choices');
+            var $container = $('<div>').addClass('choices');           // this is where it generates all the choice dots                     ////
             var levels = Object.keys(level);
             for(var i = 0; i < levels.length; i++) {
                 $('<button>')
@@ -221,7 +139,7 @@ $(function(){
         createColumns: function(){
             var colClasses = ['100', '50', '33', '25'];
 
-            var numCols = Math.floor((document.body.scrollWidth - 20) / 400);
+            var numCols = Math.floor((document.body.scrollWidth - 20) / 500);
             if(!numCols) numCols = 1;
             if(numCols > 4) numCols = 4;
             var colClass = 'col' + colClasses[numCols - 1];
@@ -417,6 +335,7 @@ $(function(){
             context.fillStyle = '#000000';
 
             var levels = Object.keys(colors);
+            console.log(levels)
             var x = context.canvas.width - 15 - (120 * levels.length);
             for(var i = 0; i < levels.length; i++) {
                 context.beginPath();
@@ -1016,6 +935,7 @@ $(function(){
                 var $container = $('<div>');
                 var btnIndex = 0;
                 $('.legend > div').each(function(){
+                    // runs when you click the "edit form" thingy at the top right and open that weird menu. might just remove that button
                     var $btn = $(this).clone();
                     $btn.addClass('big-choice');
                     $btn.appendTo($container);
