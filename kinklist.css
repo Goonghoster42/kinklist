@@ -28,7 +28,7 @@ th {
 
 th.choicesCol {
 	box-sizing:border-box;
-	width:125px
+	width:175px
 }
 
 th + th { border-left:none }
@@ -67,6 +67,8 @@ td + td { border-left-style:none }
 
 .choice + .choice { margin-left:5px }
 
+
+
 .choices .choice:hover { opacity:.75 }
 
 .choice.selected,.selected > .choice {
@@ -75,18 +77,41 @@ td + td { border-left-style:none }
 }
 
 .legend {
-	vertical-align:middle;
-	font-size:14px
+	font-size:14px;
+	display:flex;
 }
-
-.legend div { display:inline-block }
 
 .legend .choice {
 	opacity:1;
 	cursor:default
 }
 
+#legendcontainer .choice {
+	opacity:1;
+	cursor:default
+}
+
 .legend-text { vertical-align:middle }
+
+#legendcontainer {
+	display:flex;
+	vertical-align:middle;
+	font-size:14px;
+	align-items: flex-start;
+}
+
+#legendcontainer .choice {
+	margin-left: 20px;
+}
+
+#legendcontainer .unhealthy {
+	display: flex;
+}
+
+#unhealthylegend {
+	font-size:14px;
+	display: flex;
+}
 
 #ExportWrapper {
 	width:auto;
@@ -126,13 +151,6 @@ td + td { border-left-style:none }
 }
 
 @media (min-width: 1700px) {
-	.legend {
-		position:absolute;
-		top:7px;
-		left:160px
-	}
-
-	.legend div { padding-right:20px }
 
 	#ExportWrapper {
 		position:absolute;
@@ -144,10 +162,6 @@ td + td { border-left-style:none }
 }
 
 @media (max-width: 1700px) and (min-width: 800px) {
-	.legend div {
-		padding-right:20px;
-		padding-bottom:10px
-	}
 
 	#ExportWrapper {
 		position:absolute;
@@ -157,11 +171,6 @@ td + td { border-left-style:none }
 }
 
 @media (max-width: 800px) and (min-width: 598px) {
-	.legend div {
-		width:180px;
-		padding-bottom:10px;
-		padding-left:10px
-	}
 
 	#ExportWrapper {
 		position:relative;
@@ -174,12 +183,6 @@ td + td { border-left-style:none }
 	body { font-size:10px }
 
 	table { min-width:345px }
-
-	.legend div {
-		width:150px;
-		padding-bottom:10px;
-		padding-left:10px
-	}
 
 	#ExportWrapper {
 		position:relative;
@@ -221,7 +224,7 @@ td + td { border-left-style:none }
 }
 
 .col {
-	flex: 1 1 350px;
+	flex: 1 1 450px;
 	box-sizing:border-box;
 	margin:0;
 	padding:5px;
