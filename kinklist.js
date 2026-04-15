@@ -50,6 +50,7 @@ var strToClass = function(str){
 };
 var addCssRule = function(selector, rules){
     var sheet = document.styleSheets[0];
+    console.log(sheet)
     if("insertRule" in sheet) {
         sheet.insertRule(selector + "{" + rules + "}", 0);
     }
@@ -210,7 +211,7 @@ $(function(){
                     
                     if($selected.length > 0) {
                         var levelInt = $selected.data('levelInt');
-                        if(levelInt !== 5) { // Not "Limit"
+                        if(!levelInt > 5) { // Not "Limit"
                             return true; // Show if ANY trigger is selected as non-red
                         }
                     }
