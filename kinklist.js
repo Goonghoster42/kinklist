@@ -8,7 +8,7 @@ var conditionalCategories = {
     "Body Modification": {trigger: 'Body Modification', triggerCategory: 'Category Unlocks'},
     "Scents & Smells": {trigger: 'Scents & Smells', triggerCategory: 'Category Unlocks'},
     "Temperature Play": {trigger: 'Temperature Play', triggerCategory: 'Category Unlocks'},
-    "Other Fetishes": {trigger: 'Other Fetishes', triggerCategory: 'Category Unlocks'},
+    "Other Fetishes/Kinks": {trigger: 'Other Fetishes/Kinks', triggerCategory: 'Category Unlocks'},
     "Monsterfucking": {trigger: 'Monsterfucking', triggerCategory: 'Category Unlocks'},
     "General Surrealism": {trigger: 'General Surrealism', triggerCategory: 'Category Unlocks'},
     "Vore / Unbirth": {trigger: 'Vore / Unbirth', triggerCategory: 'Category Unlocks'},
@@ -23,7 +23,8 @@ var conditionalCategories = {
     "Piss": {trigger: 'Piss', triggerCategory: 'Category Unlocks'},
     "Scat": {trigger: 'Scat', triggerCategory: 'Category Unlocks'},
     "Vomit": {trigger: 'Vomit', triggerCategory: 'Category Unlocks'},
-    "Gore/Torture/Death": {trigger: 'Gore/Torture/Death', triggerCategory: 'Category Unlocks'}
+    "Torture": {trigger: 'Torture', triggerCategory: 'Category Unlocks'},
+    "Gore/Death": {trigger: 'Gore/Death', triggerCategory: 'Category Unlocks'}
 };
 
 var log = function(val, base) {
