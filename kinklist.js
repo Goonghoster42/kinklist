@@ -9,7 +9,6 @@ var conditionalCategories = {
     "Scents & Smells": {trigger: 'Scents & Smells', triggerCategory: 'Category Unlocks'},
     "Temperature Play": {trigger: 'Temperature Play', triggerCategory: 'Category Unlocks'},
     "Other Fetishes": {trigger: 'Other Fetishes', triggerCategory: 'Category Unlocks'},
-    "Technology & Digital Play": {trigger: 'Technology & Digital Play', triggerCategory: 'Category Unlocks'},
     "Monsterfucking": {trigger: 'Monsterfucking', triggerCategory: 'Category Unlocks'},
     "General Surrealism": {trigger: 'General Surrealism', triggerCategory: 'Category Unlocks'},
     "Vore / Unbirth": {trigger: 'Vore / Unbirth', triggerCategory: 'Category Unlocks'},
@@ -17,7 +16,7 @@ var conditionalCategories = {
     "CNC/Consent Play": {trigger: 'CNC/Consent Play', triggerCategory: 'Category Unlocks'},
     "BDSM Dynamics": {trigger: 'BDSM Dynamics', triggerCategory: 'Category Unlocks'},
     "Honorifics": {trigger: 'Honorifics', triggerCategory: 'Category Unlocks'},
-    "Degradation": {trigger: 'Degredation', triggerCategory: 'Category Unlocks'},
+    "Degradation": {trigger: 'Degradation', triggerCategory: 'Category Unlocks'},
     "BDSM Implements": {trigger: 'BDSM Implements', triggerCategory: 'Category Unlocks'},
     "Pain": {trigger: 'Pain', triggerCategory: 'Category Unlocks'},
     "Breath Play & Smothering": {trigger: 'Breath Play & Smothering', triggerCategory: 'Category Unlocks'},
@@ -50,7 +49,6 @@ var strToClass = function(str){
 };
 var addCssRule = function(selector, rules){
     var sheet = document.styleSheets[0];
-    console.log(sheet)
     if("insertRule" in sheet) {
         sheet.insertRule(selector + "{" + rules + "}", 0);
     }
@@ -228,7 +226,11 @@ $(function(){
             // Show if: trigger exists and is NOT "Limit" (red/index 5)
             if($selected.length > 0) {
                 var levelInt = $selected.data('levelInt');
-                return levelInt !== 5; // Not "Limit"
+                let truecheck = false
+                if (levelInt > 0 && levelInt < 6) {
+                    truecheck = true
+                }
+                return truecheck
             }
             
             // If trigger not found or not selected, hide by default
@@ -336,7 +338,6 @@ $(function(){
             context.fillStyle = '#000000';
 
             var levels = Object.keys(colors);
-            console.log(levels)
             var x = context.canvas.width - 15 - (120 * levels.length);
             for(var i = 0; i < levels.length; i++) {
                 context.beginPath();
