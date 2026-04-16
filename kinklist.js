@@ -231,6 +231,11 @@ $(function(){
                 if (levelInt > 0 && levelInt < 6) {
                     truecheck = true
                 }
+                else {
+                    if (levelInt > 6) {
+                        truecheck = true
+                    }
+                }
                 return truecheck
             }
             
