@@ -1,13 +1,17 @@
 /* Added trying to fix mobile scrolling issue */
-html {
-  width: 100%;
-}
-body {
-  height: 100%;
-  /* prevent overscroll bounce*/
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  /* iOS velocity scrolling */
+@media (max-width: 1000px) {
+    html {
+		overflow: hidden;
+		width: 100%;
+		height: 69420px;
+	}
+	body {
+		height: 100%;
+		/* prevent overscroll bounce*/
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+		/* iOS velocity scrolling */
+	}
 }
 /* Added trying to fix mobile scrolling issue */
 
