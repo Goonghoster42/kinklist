@@ -1,17 +1,19 @@
 /* Added trying to fix mobile scrolling issue */
 html {
-  overflow: hidden;
   width: 100%;
 }
 body {
   height: 100%;
-  position: fixed;
   /* prevent overscroll bounce*/
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   /* iOS velocity scrolling */
 }
 /* Added trying to fix mobile scrolling issue */
+
+#longasswhitespace {
+	height: 69420px
+}
 
 body {
 	font-family:'Verdana','Arial';
