@@ -308,7 +308,8 @@ $(function(){
                 }
             });
 
-            // On resize, redo columns
+            // On resize, redo columns         
+ /*
             (function(){
 
                 var lastResize = 0;
@@ -323,7 +324,9 @@ $(function(){
                     }, 500);
                 });
 
-            })();
+            }
+            )
+                ();*/
         },
         hashChars: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_.=+*^!@",
         maxPow: function(base, maxVal) {
